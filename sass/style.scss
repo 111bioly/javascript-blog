@@ -4,7 +4,8 @@
 
 $color-light: #fff;
 $color-dark: #444;
-
+$color-black: #000000;
+$color-blue: #0000ff;
 $font-logo: 'Sacramento', cursive;
 $font-header: 'Oswald', sans-serif;
 $font-text: 'Source Sans Pro', sans-serif;
@@ -16,17 +17,19 @@ $font-text: 'Source Sans Pro', sans-serif;
 }
 
 body {
-  background: $color-light;
+  background-image: url('tlo.png'); /*from http://subtlepatterns.com*/
   font-family: $font-text;
-  color: $color-dark;
+  color: $color-black;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.7;
-}
+  font-weight: 600;
+} 
 
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  
 }
 
 .section-title {
@@ -50,6 +53,7 @@ body {
 
 .sidebar {
   flex: 1 0 0;
+  
 }
 
 .posts {
@@ -60,8 +64,9 @@ body {
   background: $color-light;
   margin-right: 10px;
   padding: 40px;
-  border: 1px solid $color-dark;
+  border: 2px solid $color-black;
   border-radius: 5px;
+  
 }
 
 /* Logo */
@@ -72,6 +77,7 @@ body {
   font-size: 104px;
   line-height: 1;
   text-align: center;
+  z-index: 2;
 }
 
 /* Lists */
@@ -80,8 +86,26 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  .active {
+  a{
+    text-decoration: none;
+    color: $color-blue;
+    
+    &:hover {
+      text-decoration: underline;
+      opacity: 0.6;
+      z-index: 0;
+    }
+    
+  }
+}
+.list  {
+  transition: all 1s;
+  .active{
     font-weight: bold;
+    color: $color-black;
+    font-size: 25px;
+    transition: all 1s;
+    z-index: 100;
   }
 }
 
@@ -103,8 +127,12 @@ body {
 
 .post {
   display: none;
+  z-index: 0;
+  border-bottom-style: groove;
+  color: $color-black;
   &.active {
     display: block;
+    z-index: 2;
   }
 }
 
