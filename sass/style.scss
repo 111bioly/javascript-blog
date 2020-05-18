@@ -125,3 +125,33 @@ body {
     margin: 0 10px 0 0;
   }
 }
+/*Tags*/
+
+.tag-size-1 {
+  font-size: 75%;
+  color: #14f031;
+}
+
+.tag-size-2 {
+  font-size: 100%;
+  color: #fd0707;
+}
+
+.tag-size-3 {
+  font-size: 150%;
+  color: #c793b6;
+}
+
+.tag-size-4 {
+  font-size: 200%;
+  color: #15cae2;
+}
+
+.tag-size-5 {
+  font-size: 250%;
+  color: #535726;
+}
+
+.list-tags {
+  display: inline;
+}
