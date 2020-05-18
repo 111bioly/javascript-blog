@@ -66,7 +66,6 @@ body {
   font-size: 104px;
   line-height: 1;
   text-align: center;
-  z-index: 2;
 }
 
 /* Lists */
@@ -76,27 +75,8 @@ body {
   padding: 0;
 }
 
-.list a {
-  text-decoration: none;
-  color: #0000ff;
-}
-
-.list a:hover {
-  text-decoration: underline;
-  opacity: 0.6;
-  z-index: 0;
-}
-
-.list {
-  transition: all 1s;
-}
-
 .list .active {
   font-weight: bold;
-  color: #000000;
-  font-size: 25px;
-  transition: all 1s;
-  z-index: 100;
 }
 
 .list-horizontal li {
@@ -111,19 +91,14 @@ body {
 /* Post */
 .post {
   display: none;
-  z-index: 0;
-  border-bottom-style: groove;
-  color: #000000;
 }
 
 .post.active {
   display: block;
-  z-index: 2;
 }
 
 .post-author {
   font-style: italic;
-  list-style-type: none;
 }
 
 .post-tags {
@@ -133,9 +108,5 @@ body {
 
 .post-tags p {
   margin: 0 10px 0 0;
-}
-
-.post-tags a {
-  padding-right: 15px;
 }
 /*# sourceMappingURL=style.css.map */
